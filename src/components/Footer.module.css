@@ -1,0 +1,9 @@
+.footer { background: var(--surface); border-top: 1px solid var(--border); margin-top: 24px; }
+.inner { max-width: 1120px; margin: auto; padding: 32px 24px 24px; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 24px; }
+.brand { color: var(--brand); font-size: 18px; }
+.inner p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.links { display: flex; gap: 22px; }
+.links a { color: var(--secondary-text); text-decoration: none; font-size: 14px; padding: 4px 0; border-bottom: 2px solid transparent; transition: color .15s ease, border-color .15s ease; }
+.links a:hover { color: var(--link); border-bottom-color: var(--link); }
+.copy { max-width: 1120px; margin: auto; padding: 16px 24px 28px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 12px; }
+@media (max-width: 540px) { .inner { flex-direction: column; } }

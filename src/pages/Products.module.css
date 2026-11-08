@@ -1,0 +1,19 @@
+.filters { scroll-margin-top: 110px; display: grid; grid-template-columns: 1fr 200px 200px auto; gap: 16px; align-items: end; padding: 20px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); margin: 28px 0 20px; box-shadow: 0 2px 8px #0000000d; }
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 6px 4px 14px; margin-bottom: 4px; scrollbar-width: thin; }
+.chip { flex-shrink: 0; min-height: 36px; padding: 6px 14px; border-radius: 999px; font-size: 13px; text-transform: capitalize; white-space: nowrap; background: var(--surface); color: var(--secondary-text); border: 1px solid var(--border-strong); box-shadow: none; }
+.chip:hover { background: var(--hover); box-shadow: none; transform: none; }
+.chipActive, .chipActive:hover { background: var(--tint); color: var(--link); border-color: var(--link); }
+.count { color: var(--muted); font-size: 14px; margin: 0 0 18px; }
+.more { text-align: center; margin-top: 28px; }
+@media (max-width: 950px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .filters { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .grid, .filters { grid-template-columns: 1fr; } }
+
+.banner { position: relative; overflow: hidden; padding: 40px 32px; border: 1px solid var(--banner-border); border-radius: 16px; background: linear-gradient(135deg, var(--banner-bg), var(--surface)); border-left: 5px solid #24634c; }
+.banner h1 { max-width: 650px; font-size: 36px; letter-spacing: -1px; }
+.banner::before { content: ''; position: absolute; right: -70px; top: -70px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, var(--tint-border), transparent 70%); }
+.banner > * { position: relative; }
+.cta { margin-top: 22px; padding: 12px 24px; font-size: 15px; }
+.eyebrow { color: var(--link); font-size: 11px; font-weight: 700; letter-spacing: 2px; margin: 0 0 12px; }
+@media (max-width: 540px) { .banner { padding: 24px 20px; } .banner h1 { font-size: 28px; } }
